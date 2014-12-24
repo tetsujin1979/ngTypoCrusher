@@ -1,13 +1,16 @@
 <div class="container" ng-init="getFonts()">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <h1>typo-crusher</h1>
+      <h1>ngTypoCrusher</h1>
       <h2>See your writing in an unfamiliar context</h2>
       <h3>Help proofread your writing and <a href="http://www.wired.com/2014/08/wuwt-typos/">spot typos that your brain hides</a>.</h3>
       <p>Try by pasting this example:</p>
       <blockquote> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nisl viverra, consectetur urna eu, malesuada diam. In hac habitasse platea dictumst. Proin ultrices sapien feugiat, rutrum odio cursus, sodales neque. Curabitur eu scelerisque sapien. Duis suscipit posuere lectus eu aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi a accumsan nulla.</blockquote>
-      <textarea class="form-control" rows="3" id="pastespace" placeholder="Paste text here..."></textarea>
-      <div id="displayspace"></div>
+      <textarea class="form-control" rows="3" ng-model="pasteSpace" placeholder="Paste text here..." ng-change="updateDisplay()"></textarea>
+      <div style="text-align: center">
+        <div ng-repeat="space in spaces" ng-bind-html="space | trustedHTML"></div>
+      </div>
+      <p>Because I've officially run out of ideas and now I'm just ripping off Alan</p>
     </div>
   </div>
 </div>
