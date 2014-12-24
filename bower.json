@@ -1,0 +1,12 @@
+{
+  "name": "ngTypoCrusher",
+  "description": "An AngularJS implementation of the Typo Crusher",
+  "version": "0.0.1",
+  "homepage": "https://github.com/tetsujin1979/ngTypoCrusher",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.3.x",
+    "angular-route": "1.3.x"
+  }
+}
