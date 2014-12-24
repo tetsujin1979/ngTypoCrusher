@@ -8,7 +8,7 @@
       <blockquote> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a nisl viverra, consectetur urna eu, malesuada diam. In hac habitasse platea dictumst. Proin ultrices sapien feugiat, rutrum odio cursus, sodales neque. Curabitur eu scelerisque sapien. Duis suscipit posuere lectus eu aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi a accumsan nulla.</blockquote>
       <textarea class="form-control" rows="3" ng-model="pasteSpace" placeholder="Paste text here..." ng-change="updateDisplay()"></textarea>
       <div style="text-align: center">
-        <div ng-repeat="space in spaces" ng-bind-html="space | trustedHTML"></div>
+        <div class="space" ng-repeat="space in spaces" ng-bind-html="space | trustedHTML"></div>
       </div>
       <p>Because I've officially run out of ideas and now I'm just ripping off Alan</p>
     </div>
